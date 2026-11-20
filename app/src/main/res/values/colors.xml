@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 品牌色：靛蓝 → 紫罗兰渐变 -->
+    <color name="brand_start">#FF6C63FF</color>
+    <color name="brand_end">#FF4A7DFF</color>
+    <color name="brand_deep">#FF5B4BE0</color>
+    <color name="brand_accent">#FF6C63FF</color>
+    <color name="brand_soft">#FFF1F0FF</color>
+    <color name="brand_soft_stroke">#FFDDD8FF</color>
+
+    <!-- 页面与卡片 -->
+    <color name="screen_bg">#FFF4F5FA</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="card_stroke">#FFEDEFF6</color>
+    <color name="divider">#FFEFF1F7</color>
+    <color name="icon_button_bg">#FFF3F4FA</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 文字 -->
+    <color name="text_primary">#FF1A1D2B</color>
+    <color name="text_secondary">#FF7A8199</color>
+    <color name="text_tertiary">#FFAEB4C6</color>
+    <color name="text_on_brand">#FFFFFFFF</color>
+    <color name="text_on_brand_soft">#D9FFFFFF</color>
+
+    <!-- 列表 / 播放状态 -->
+    <color name="playing_bg">#FFF2F0FF</color>
+    <color name="playing_stroke">#FFD9D2FF</color>
+    <color name="ripple_light">#14000000</color>
+    <color name="seek_track">#FFE7E9F3</color>
+    <color name="seek_progress">#FF6C63FF</color>
+    <color name="seek_thumb">#FF6C63FF</color>
+
+    <!-- 启动图标背景 -->
+    <color name="ic_launcher_background">#FF5B4BE0</color>
+</resources>

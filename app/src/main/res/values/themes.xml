@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        应用主题：无 ActionBar，标题栏由 activity_main.xml 里的自定义渐变头部承担，
+        头部固定显示「姓名+学号」，副标题用来区分实验。
+        参考实验指导书：使用 MaterialComponents 的 Bridge 主题，避免按钮背景被 Material3 覆盖。
+    -->
+    <style name="Theme.MusicPlayer" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/brand_accent</item>
+        <item name="colorPrimaryVariant">@color/brand_deep</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/brand_end</item>
+        <item name="colorSecondaryVariant">@color/brand_deep</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorAccent">@color/brand_accent</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <!-- 歌曲标题 -->
+    <style name="TextAppearance.MusicPlayer.SongTitle" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 歌曲副标题 / 次要信息 -->
+    <style name="TextAppearance.MusicPlayer.SongMeta" parent="">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 底部控制栏的圆形图标按钮 -->
+    <style name="Widget.MusicPlayer.IconButton" parent="">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/bg_icon_button</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/text_primary</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <!-- 顶部搜索框 -->
+    <style name="Widget.MusicPlayer.Search" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- 主按钮（空状态 / 权限页） -->
+    <style name="Widget.MusicPlayer.PrimaryButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_primary_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+</resources>

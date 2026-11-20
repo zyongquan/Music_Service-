@@ -33,3 +33,16 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# 本项目的临时工作目录（截图素材、生成脚本）
+/_work/
+/_ref/
+
+# Android Studio 自动生成的 Gradle Daemon JVM 配置（本地环境相关）
+gradle/gradle-daemon-jvm.properties
+
+# 实验报告（单独作为附件提交，不进仓库）
+/*.docx
+
+# LibreOffice 预览临时目录
+/.dsh-office.*/

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- 本实验不保存需要备份的数据 -->
+    </cloud-backup>
+</data-extraction-rules>
